@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Statblock example</title>
+
+    <link rel="import" href="../src/top-stats.html">
+    <link rel="import" href="../src/creature-heading.html">
+    <link rel="import" href="../src/abilities-block.html">
+    <link rel="import" href="../src/property-block.html">
+    <link rel="import" href="../src/property-line.html">
+    <link rel="import" href="../src/stat-block.html">
+
+    <style>
+      body {
+        margin: 0;
+      }
+      stat-block {
+        /* A bit of margin for presentation purposes, to show off the drop
+        shadow. */
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+  <stat-block>
+    <creature-heading>
+      <h1>Thornheart</h1>
+      <h2>Small fey, chaotic evil</h2>
+    </creature-heading>
+
+    <top-stats>
+      <property-line>
+        <h4>Armor Class</h4>
+        <p>15 (natural armor)</p>
+      </property-line>
+      <property-line>
+        <h4>Hit Points</h4>
+        <p>55 (10d6 + 20)</p>
+      </property-line>
+      <property-line>
+        <h4>Speed</h4>
+        <p>40ft., burrow 30ft., climb 30ft.</p>
+      </property-line>
+
+      <abilities-block data-str="11"
+                       data-dex="16"
+                       data-con="15"
+                       data-int="13"
+                       data-wis="10"
+                       data-cha="16"></abilities-block>
+
+      <property-line>
+        <h4>Skills</h4>
+        <p>Stealth +7</p>
+      </property-line>
+      <property-line>
+        <h4>Senses</h4>
+        <p>darkvision 120ft., passive Perception 12</p>
+      </property-line>
+      <property-line>
+        <h4>Languages</h4>
+        <p>Common, Nekker, Sylvan</p>
+      </property-line>
+      <property-line>
+        <h4>Challenge</h4>
+        <p>3 (700 XP)</p>
+      </property-line>
+    </top-stats>
+
+    <property-block>
+      <h4>Fey Resilience.</h4>
+      <p> The nekker has advantage on saving 
+          throws against illusions, as well as to resist being 
+          charmed or paralyzed and magic can't put the nekker 
+          to sleep.</p>
+    </property-block>
+    <property-block>
+      <h4>Heart of the Swarm.</h4>
+      <p> While the thornheart is alive, the other 
+      nekkers within 60 feet of it have advantage on 
+      attack rolls against a creature if at least one of the 
+      thornheart's allies is within 5 feet of the creature and 
+      the ally isn't incapacitated.</p>
+    </property-block>
+    <property-block>
+      <h4>Thorn Lurker.</h4>
+      <p> The nekker can attempt to hide even 
+          when it is only lightly obscured by foliage. 
+          Additionally, the nekker can pass through nonmagical 
+          plants without being slowed by them and without 
+          taking damage from them if they have thorns, spines, 
+          or a similar hazard.</p>
+    </property-block>
+
+    <h3>Actions</h3>
+    
+    <property-block>
+      <h4>Multiattack.</h4>
+      <p>The thornheart uses it Thorn Charm and 
+      makes two claw attacks. It can use Thorns Volley in 
+      place of any melee attack.</p>
+    </property-block>
+    <property-block>
+      <h4>Claws.</h4>
+      <p><i>Melee Weapon Attack:</i> +5 to hit, reach 5 ft., one target.
+        <i>Hit:</i> 7 (2d4 + 3) slashing damage.</p>
+    </property-block>
+    <property-block>
+      <h4>Thorns Volley.</h4>
+      <p><i>Ranged Weapon Attack:</i> +5 to hit, reach 5 ft., range 60 ft.,
+      one target. <i>Hit:</i> 7 (2d4 + 3) pircing damage plus 3 (1d6) poison damage.</p>
+    </property-block>
+    <property-block>
+      <h4>Thorn Charm.</h4>
+      <p> The thornheart touches the thorn in its 
+      heart and target one creature that it can see within 60 
+      feet of it. That target must make a DC 13 Charisma 
+      saving throw. If the target succeeds on the saving 
+      throw, the nekker is blinded until the end of its next 
+      turn and takes 2d6 psychic damage. In case of failure, 
+      the target suffers one of the following effects at 
+      random:
+      </br> 1. <i>Mad Laughter.</i> The target falls prone, becoming 
+      incapacitated and unable to stand up until the end of the 
+      thornheart's next turn and take 10 (3d6) psychic damage.
+      </br> 2. <i>Bedeviled.</i> Hooves, horns and fur grows on the target, it 
+      has disadvantage on attack rolls and saving throws until 
+      the end of the thornheart's next turn.
+      </br> 3. <i>Afflicted.</i> The target is poisoned until the end of the 
+      thornheart's next turn as toads, spiders and snakes crowl 
+      out of it, and takes 10 (3d6) poison damage.
+      </br> 4. <i>Foul's Gold.</i> The target loses 2d6 gold pieces as they melt 
+      and take 10 (3d6) fire damage. If the target has no gold 
+      pieces, nothing happens.</p>
+    </property-block>
+  </stat-block>
+</body>
+</html>
