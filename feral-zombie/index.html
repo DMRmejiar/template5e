@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Feral zombie</title>
+
+      <link rel="import" href="../src/top-stats.html">
+      <link rel="import" href="../src/creature-heading.html">
+      <link rel="import" href="../src/abilities-block.html">
+      <link rel="import" href="../src/property-block.html">
+      <link rel="import" href="../src/property-line.html">
+      <link rel="import" href="../src/stat-block.html">
+
+      <style>
+        body {
+          margin: 0;
+        }
+        stat-block {
+          /* A bit of margin for presentation purposes, to show off the drop
+          shadow. */
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      </style>
+  </head>
+  <body>
+    <stat-block data-two-column data-content-height="672">
+      <creature-heading>
+        <h1>Feral zombie</h1>
+        <h2>Medium undead, neutral evil</h2>
+      </creature-heading>
+
+      <top-stats>
+        <property-line>
+          <h4>Armor Class</h4>
+          <p>12</p>
+        </property-line>
+        <property-line>
+          <h4>Hit Points</h4>
+          <p>22 (3d8 + 9)</p>
+        </property-line>
+        <property-line>
+          <h4>Speed</h4>
+          <p>30 ft.</p>
+        </property-line>
+
+        <abilities-block data-str="12"
+                         data-dex="14"
+                         data-con="16"
+                         data-int="3"
+                         data-wis="7"
+                         data-cha="6"></abilities-block>
+
+        <property-line>
+          <h4>Damage Immunities</h4>
+          <p>posion</p>
+        </property-line>
+        <property-line>
+          <h4>Condition Immunities</h4>
+          <p>poisoned</p>
+        </property-line>
+        <property-line>
+          <h4>Senses</h4>
+          <p>darkvision 60 ft., passive Perception 8</p>
+        </property-line>
+        <property-line>
+          <h4>Lenguages</h4>
+          <p>undertands the lenguages it knew in life
+          but can't speak.</p>
+        </property-line>
+        <property-line>
+          <h4>Challenge</h4>
+          <p>1/2 (100 XP)</p>
+        </property-line>
+      </top-stats>
+
+      <property-block>
+        <h4>Aggressive.</h4>
+        <p> As a bonus action, the zombie can move
+          up to half its speed toward a hostile creature it can
+          see.</p>
+      </property-block>
+      <property-block>
+        <h4>Undead Fortitude.</h4>
+        <p> If damage reduces the zombie to 0
+          hit points, it must make a Constitution saving throw
+          with a DC of 5+the damage taken, unless the
+          damage is radiant or from a critical hit. On a success,
+          the zombie drops to 1 hit point instead.</p>
+      </property-block>
+
+      <h3>Actions</h3>
+
+      <property-block>
+        <h4>Bite.</h4>
+        <p><i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one target.
+          <i>Hit:</i> 5 (1d6 + 2) piercing damage.</p>
+      </property-block>
+    </stat-block>
+  </body>
+</html>
